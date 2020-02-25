@@ -2,21 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stumbling in Codes: software delopment and related</title>
-    <link>https://alexlesang.github.io/</link>
+    <link>https://www.oleksandrhalushko.nl/</link>
     <description>Recent content on Stumbling in Codes: software delopment and related</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2020 22:29:31 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 23:19:15 +0100</lastBuildDate>
     
-	<atom:link href="https://alexlesang.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.oleksandrhalushko.nl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Business</title>
+      <link>https://www.oleksandrhalushko.nl/business/</link>
+      <pubDate>Tue, 25 Feb 2020 23:19:15 +0100</pubDate>
+      
+      <guid>https://www.oleksandrhalushko.nl/business/</guid>
+      <description>What do I do  Senior Embedded C++ Developer at Sioux Technologies Maintainer and Mentor for C++ track at Exercism  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://www.oleksandrhalushko.nl/contact/</link>
+      <pubDate>Tue, 25 Feb 2020 23:08:24 +0100</pubDate>
+      
+      <guid>https://www.oleksandrhalushko.nl/contact/</guid>
+      <description>If you want to get in touch just say &amp;lsquo;Hi!&amp;rsquo; any time.
+You can do that at:
+ alexlesang@gmail.com Github Linkedin  </description>
+    </item>
+    
+    <item>
       <title>About</title>
-      <link>https://alexlesang.github.io/about/</link>
+      <link>https://www.oleksandrhalushko.nl/about/</link>
       <pubDate>Tue, 25 Feb 2020 22:29:31 +0100</pubDate>
       
-      <guid>https://alexlesang.github.io/about/</guid>
+      <guid>https://www.oleksandrhalushko.nl/about/</guid>
       <description>Who am I? My name is Oleksandr Halushko and I am a software developer.
 What is this? This is my personal blog where I put my thoughts.
 Whom is this for? Mostly for me but everyone is welcome to read.</description>

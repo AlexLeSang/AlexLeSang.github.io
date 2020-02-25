@@ -3,21 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://alexlesang.github.io/about/</loc>
+    <loc>https://www.oleksandrhalushko.nl/business/</loc>
+    <lastmod>2020-02-25T23:19:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.oleksandrhalushko.nl/</loc>
+    <lastmod>2020-02-25T23:19:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.oleksandrhalushko.nl/contact/</loc>
+    <lastmod>2020-02-25T23:08:24+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.oleksandrhalushko.nl/about/</loc>
     <lastmod>2020-02-25T22:29:31+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alexlesang.github.io/</loc>
-    <lastmod>2020-02-25T22:29:31+01:00</lastmod>
+    <loc>https://www.oleksandrhalushko.nl/categories/</loc>
   </url>
   
   <url>
-    <loc>https://alexlesang.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://alexlesang.github.io/tags/</loc>
+    <loc>https://www.oleksandrhalushko.nl/tags/</loc>
   </url>
   
 </urlset>
