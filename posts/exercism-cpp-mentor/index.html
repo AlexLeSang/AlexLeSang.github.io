@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Exercism: C&#43;&#43; mentor">
+<meta itemprop="description" content="You do not truly understand a topic unless you can explain it to somebody else.
+What is Exercism Exercism is a platform where people can learn programming languages.
+What is it for: learning programming languages quick, easy, hands-on and right.
+How does it work:
+ you have instruction how to set up the environment you have simple exercise you have unit tests you run a unit test: it fails you google some basics: make the test pass repeat previous two steps until all provided unit tests pass  Then is the fun part: you push it to the platform (submit) and a living person with relevant experience, called mentor looks at what you have done and gives you feedback!">
+<meta itemprop="datePublished" content="2020-02-25T23:24:33&#43;01:00" />
+<meta itemprop="dateModified" content="2020-02-26T19:54:14&#43;01:00" />
+<meta itemprop="wordCount" content="663">
+
+
+
+<meta itemprop="keywords" content="exercism,c&#43;&#43;," /><meta property="og:title" content="Exercism: C&#43;&#43; mentor" />
+<meta property="og:description" content="You do not truly understand a topic unless you can explain it to somebody else.
+What is Exercism Exercism is a platform where people can learn programming languages.
+What is it for: learning programming languages quick, easy, hands-on and right.
+How does it work:
+ you have instruction how to set up the environment you have simple exercise you have unit tests you run a unit test: it fails you google some basics: make the test pass repeat previous two steps until all provided unit tests pass  Then is the fun part: you push it to the platform (submit) and a living person with relevant experience, called mentor looks at what you have done and gives you feedback!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.oleksandrhalushko.nl/posts/exercism-cpp-mentor/" />
+<meta property="article:published_time" content="2020-02-25T23:24:33+01:00" />
+<meta property="article:modified_time" content="2020-02-26T19:54:14+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Exercism: C&#43;&#43; mentor"/>
+<meta name="twitter:description" content="You do not truly understand a topic unless you can explain it to somebody else.
+What is Exercism Exercism is a platform where people can learn programming languages.
+What is it for: learning programming languages quick, easy, hands-on and right.
+How does it work:
+ you have instruction how to set up the environment you have simple exercise you have unit tests you run a unit test: it fails you google some basics: make the test pass repeat previous two steps until all provided unit tests pass  Then is the fun part: you push it to the platform (submit) and a living person with relevant experience, called mentor looks at what you have done and gives you feedback!"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Exercism: C&#43;&#43; mentor</title>
+	<link rel="stylesheet" href="https://www.oleksandrhalushko.nl/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://www.oleksandrhalushko.nl/">Stumbling in Codes</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://www.oleksandrhalushko.nl/posts/">Posts</a>
+				<a href="https://www.oleksandrhalushko.nl/about/">About</a>
+				<a href="https://www.oleksandrhalushko.nl/business/">Business</a>
+				<a href="https://www.oleksandrhalushko.nl/contact/">Contact</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="alexlesang@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a><a href="https://www.linkedin.com/in/oleksandrhalushko/" target="_blank" rel="noopener me" title="Linked in"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><a href="https://github.com/AlexLeSang/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://www.oleksandrhalushko.nl/posts/">Posts</a></li>
+			<li><a href="https://www.oleksandrhalushko.nl/about/">About</a></li>
+			<li><a href="https://www.oleksandrhalushko.nl/business/">Business</a></li>
+			<li><a href="https://www.oleksandrhalushko.nl/contact/">Contact</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Feb 25, 2020</span></div>
+				<h1>Exercism: C&#43;&#43; mentor</h1>
+			</header>
+			<div class="content">
+				<p><em>You do not truly understand a topic unless you can explain it to somebody else.</em></p>
+<h3 id="what-is-exercism">What is Exercism<a href="#what-is-exercism" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p><a href="https://exercism.io/">Exercism</a> is a platform where people can learn programming languages.</p>
+<p>What is it for: learning programming languages <strong>quick</strong>, <strong>easy</strong>, <strong>hands-on</strong> and <strong>right</strong>.</p>
+<p>How does it work:</p>
+<ul>
+<li>you have instruction how to set up the environment</li>
+<li>you have simple exercise</li>
+<li>you have unit tests</li>
+<li>you run a unit test: it fails</li>
+<li>you google some basics: make the test pass</li>
+<li>repeat previous two steps until all provided unit tests pass</li>
+</ul>
+<p>Then is the fun part: you push it to the platform (submit) and <strong>a living person with relevant experience</strong>, called <em>mentor</em> looks at what you have done and <strong>gives you feedback</strong>! Neat, eh?
+No need to guess if you make something acceptable or it was just a happy accident. Apply the comments and learn.</p>
+<p>Unfortunately, there are some problems with that.</p>
+<p>First: you have to wait for your feedback: that is what drives people off. More time passes between the moment you have pushed the exercise the more context you have already forgotten.
+Mentors are volunteers, and they are busy. It can take days before you get any response.</p>
+<p>Second: what you have submitted, depending on the problem and programming language, may require extensive feedback.
+The feedback may consists of what you did not do exactly right (or completely wrong), what you should have done, and why certain things should be considered or used.</p>
+<h2 id="what-it-means-to-be-a-mentor">What it means to be a mentor<a href="#what-it-means-to-be-a-mentor" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Being a mentor is highly rewarding for me, I love it. I love seeing how people approach the same problem in different ways.
+People with background in different languages bring over their &lsquo;styles&rsquo;: I learn from it. Answering questions or giving a feedback require research.
+I like having discussions.
+I like knowing that by giving proper explanation today on subject why one should avoid using that particular concept, I may avoid having to tear my hair in some project tomorrow.
+I like explaining to people concepts that took me a lot of pain to understand. C++ is full of &lsquo;magic&rsquo;.</p>
+<p>In order to address that we&rsquo;re working on new iteration of Exercism to give students faster feedback and to reduce load on mentors. The idea is to get students through basic language concepts: independently and automatically.</p>
+<h4 id="mentor-for-c">Mentor for C++<a href="#mentor-for-c" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<p>C++ is an old language: lots and lots of &lsquo;baggage&rsquo;. Compatibility with C means that almost everything that programmer types in - compiles, then crashes.
+Undefined behavior, no garbage collection, raw memory access, strange features: all that makes it harder make something which is safe.</p>
+<p>Writing safe C++ comes with experience. To get that experience you either have to earn that or you have to actively look for it.
+The fact that even really unsafe code compiles and <strong>almost always</strong> works makes it harder to justify the point of why one should try to make it better.
+That is why so many people find C++ code snippets that <strong>work</strong> but are not what I would call proper <strong>Modern C++</strong>.</p>
+<p><strong>Modern C++</strong> every standard of C++-11 and further: designed to make the language safer and simpler.</p>
+<p>The challenge is to overcome what I see every day at work: <strong>not</strong> <strong>Modern C++</strong>.
+I have to learn what is the best way to do that and explain that in the way that in accessible.</p>
+<h2 id="conclusions">Conclusions<a href="#conclusions" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>Mentoring C++ track for Exercism is highly rewarding way of getting more people to learn <strong>Modern C++</strong>.
+Being aware of professional biases while giving feedback is extremely important for C++ track. Getting to safe code requires paradigm shift.</p>
+<p>If you are a C++ developer wanting to help C++ grow, make future C++ code bases better, propel your understanding of the language or just help people new to the language, please join Exercism!</p>
+<h2 id="references">References<a href="#references" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>More about C++ at Exercism you can find at <a href="https://exercism.io/tracks/cpp">Exercism: cpp track</a>.</p>
+<p>Explore more on the subject of Modern C++:</p>
+<ul>
+<li><a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines">C++ Core Guidelines</a></li>
+<li><a href="https://www.moderncplusplus.com/">Modern C++</a></li>
+<li><a href="https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp?view=vs-2019">Welcome back to C++ - Modern C++</a></li>
+</ul>
+
+			</div>
+
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://www.oleksandrhalushko.nl/tags/exercism">exercism</a></span><span class="tag"><a href="https://www.oleksandrhalushko.nl/tags/c&#43;&#43;">c&#43;&#43;</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>663 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-02-25 23:24 &#43;0100</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://www.oleksandrhalushko.nl/">Oleksandr Halushko</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://www.oleksandrhalushko.nl/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://www.oleksandrhalushko.nl/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
