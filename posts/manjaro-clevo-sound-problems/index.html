@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Manjaro; Clevo Laptop; No Sound">
+<meta itemprop="description" content="Symptoms No sound in Linux. Reporting of pavucontrol shows that sound is being emitted to the device but nothing happens.
+Messages in dmesg [ 37.482138] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 [ 37.482235] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 Configuration Laptop Clevo with P95_96_97Ex,Rx. Dual-boot Manjaro 20 with Windows 10.
+uname -v -r -o 5.7.0-1-MANJARO #1 SMP PREEMPT Tue Apr 21 20:48:43 UTC 2020 GNU/Linux 5.7.0-1-MANJARO">
+<meta itemprop="datePublished" content="2020-04-27T12:23:40&#43;02:00" />
+<meta itemprop="dateModified" content="2020-04-27T13:17:49&#43;02:00" />
+<meta itemprop="wordCount" content="361">
+
+
+
+<meta itemprop="keywords" content="clevo,manjaro,linux,sound," /><meta property="og:title" content="Manjaro; Clevo Laptop; No Sound" />
+<meta property="og:description" content="Symptoms No sound in Linux. Reporting of pavucontrol shows that sound is being emitted to the device but nothing happens.
+Messages in dmesg [ 37.482138] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 [ 37.482235] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 Configuration Laptop Clevo with P95_96_97Ex,Rx. Dual-boot Manjaro 20 with Windows 10.
+uname -v -r -o 5.7.0-1-MANJARO #1 SMP PREEMPT Tue Apr 21 20:48:43 UTC 2020 GNU/Linux 5.7.0-1-MANJARO" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems/" />
+<meta property="article:published_time" content="2020-04-27T12:23:40+02:00" />
+<meta property="article:modified_time" content="2020-04-27T13:17:49+02:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Manjaro; Clevo Laptop; No Sound"/>
+<meta name="twitter:description" content="Symptoms No sound in Linux. Reporting of pavucontrol shows that sound is being emitted to the device but nothing happens.
+Messages in dmesg [ 37.482138] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 [ 37.482235] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 Configuration Laptop Clevo with P95_96_97Ex,Rx. Dual-boot Manjaro 20 with Windows 10.
+uname -v -r -o 5.7.0-1-MANJARO #1 SMP PREEMPT Tue Apr 21 20:48:43 UTC 2020 GNU/Linux 5.7.0-1-MANJARO"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Manjaro; Clevo Laptop; No Sound</title>
+	<link rel="stylesheet" href="https://www.oleksandrhalushko.nl/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://www.oleksandrhalushko.nl/">Stumbling in Codes</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://www.oleksandrhalushko.nl/posts/">Posts</a>
+				<a href="https://www.oleksandrhalushko.nl/about/">About</a>
+				<a href="https://www.oleksandrhalushko.nl/business/">Business</a>
+				<a href="https://www.oleksandrhalushko.nl/contact/">Contact</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="mailto:alexlesang@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a><a href="https://www.linkedin.com/in/oleksandrhalushko/" target="_blank" rel="noopener me" title="Linked in"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><a href="https://github.com/AlexLeSang/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://www.oleksandrhalushko.nl/posts/">Posts</a></li>
+			<li><a href="https://www.oleksandrhalushko.nl/about/">About</a></li>
+			<li><a href="https://www.oleksandrhalushko.nl/business/">Business</a></li>
+			<li><a href="https://www.oleksandrhalushko.nl/contact/">Contact</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Apr 27, 2020</span></div>
+				<h1>Manjaro; Clevo Laptop; No Sound</h1>
+			</header>
+			<div class="content">
+				<h2 id="symptoms">Symptoms<a href="#symptoms" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>No sound in Linux. Reporting of <code>pavucontrol</code> shows that sound is being emitted to the device but nothing happens.</p>
+<h3 id="messages-in-dmesg">Messages in <code>dmesg</code><a href="#messages-in-dmesg" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<pre><code>[   37.482138] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5
+[   37.482235] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5
+</code></pre><h2 id="configuration">Configuration<a href="#configuration" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h3 id="laptop">Laptop<a href="#laptop" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Clevo with <code>P95_96_97Ex,Rx</code>. Dual-boot Manjaro 20 with Windows 10.</p>
+<h4 id="uname--v--r--o"><code>uname -v -r -o</code><a href="#uname--v--r--o" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>5.7.0-1-MANJARO #1 SMP PREEMPT Tue Apr 21 20:48:43 UTC 2020 GNU/Linux
+</code></pre><p><code>5.7.0-1-MANJARO</code></p>
+<h4 id="lsb_release"><code>lsb_release</code><a href="#lsb_release" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>LSB Version:	n/a
+Distributor ID:	ManjaroLinux
+Description:	Manjaro Linux
+Release:	20.0
+Codename:	Lysia
+</code></pre><h3 id="lspci--kk"><code>lspci -kk</code><a href="#lspci--kk" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<pre><code>00:1f.3 Audio device: Intel Corporation Cannon Lake PCH cAVS (rev 10)
+	Subsystem: CLEVO/KAPOK Computer Cannon Lake PCH cAVS
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel, snd_soc_skl, snd_sof_pci
+</code></pre><h4 id="inxi--fxxxza---no-host"><code>inxi -Fxxxza --no-host</code><a href="#inxi--fxxxza---no-host" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>Audio:     Device-1: Intel Cannon Lake PCH cAVS vendor: CLEVO/KAPOK driver: snd_hda_intel v: kernel bus ID: 00:1f.3
+           chip ID: 8086:a348
+           Sound Server: ALSA v: k5.7.0-1-MANJARO
+</code></pre><h4 id="aply--l"><code>aply -l</code><a href="#aply--l" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>**** List of PLAYBACK Hardware Devices ****
+card 0: PCH [HDA Intel PCH], device 0: ALC1220 Analog [ALC1220 Analog]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 0: PCH [HDA Intel PCH], device 1: ALC1220 Digital [ALC1220 Digital]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+</code></pre><h4 id="lsmod--grep-snd_hda"><code>lsmod | grep snd_hda</code><a href="#lsmod--grep-snd_hda" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>snd_hda_codec_realtek   126976  1
+snd_hda_codec_generic    94208  1 snd_hda_codec_realtek
+ledtrig_audio          16384  3 snd_hda_codec_generic,snd_hda_codec_realtek,snd_sof
+snd_hda_ext_core       36864  4 snd_sof_intel_hda_common,snd_soc_hdac_hda,snd_soc_skl,snd_sof_intel_hda
+snd_hda_intel          57344  3
+snd_intel_dspcfg       28672  4 snd_hda_intel,snd_sof_pci,snd_sof_intel_hda_common,snd_soc_skl
+snd_hda_codec         163840  4 snd_hda_codec_generic,snd_hda_intel,snd_hda_codec_realtek,snd_soc_hdac_hda
+snd_hda_core          106496  9 snd_hda_codec_generic,snd_hda_intel,snd_hda_ext_core,snd_hda_codec,snd_hda_codec_realtek,snd_sof_intel_hda_common,snd_soc_hdac_hda,snd_soc_skl,snd_sof_intel_hda
+snd_hwdep              16384  1 snd_hda_codec
+snd_pcm               143360  9 snd_hda_intel,snd_hda_codec,snd_sof,snd_sof_intel_hda_common,snd_compress,snd_soc_core,snd_soc_skl,snd_hda_core,snd_pcm_dmaengine
+snd                   114688  19 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_compress,snd_soc_core,snd_pcm
+</code></pre><h4 id="snd_hda_codec_realtek"><code>snd_hda_codec_realtek</code><a href="#snd_hda_codec_realtek" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<pre><code>Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0: autoconfig for ALC1220: line_outs=1 (0x1b/0x0/0x0/0x0/0x0) type:speaker
+Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0:    hp_outs=1 (0x14/0x0/0x0/0x0/0x0)
+Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0:    mono: mono_out=0x0
+Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0:    dig-out=0x1e/0x0
+Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0:    inputs:
+Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0:      Mic=0x18
+Apr 27 12:01:16 oleksandr-manjaro kernel: snd_hda_codec_realtek hdaudioC0D0:      Internal Mic=0x12
+Apr 27 12:01:16 oleksandr-manjaro kernel: input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:1f.3/sound/card0/input31
+Apr 27 12:01:16 oleksandr-manjaro kernel: input: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input32
+Apr 27 12:01:16 oleksandr-manjaro kernel: input: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input33
+</code></pre><h3 id="solution">Solution<a href="#solution" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>Put the following configuration in <code>/etc/modprobe.d/alsa-base.conf</code>.</p>
+<pre><code>options snd-hda-intel model=clevo-p950 probe_mask=1
+</code></pre><h2 id="resources">Resources<a href="#resources" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ul>
+<li><a href="https://help.ubuntu.com/community/HdaIntelSoundHowto">HdaIntelSoundHowto</a></li>
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=216104">[SOLVED] Audio stopped working in linux 4.7</a></li>
+</ul>
+
+			</div>
+
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://www.oleksandrhalushko.nl/tags/clevo">clevo</a></span><span class="tag"><a href="https://www.oleksandrhalushko.nl/tags/manjaro">manjaro</a></span><span class="tag"><a href="https://www.oleksandrhalushko.nl/tags/linux">linux</a></span><span class="tag"><a href="https://www.oleksandrhalushko.nl/tags/sound">sound</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>361 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-04-27 12:23 &#43;0200</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://www.oleksandrhalushko.nl/posts/exercism-cpp-mentor/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Exercism: C&#43;&#43; mentor</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://www.oleksandrhalushko.nl/">Oleksandr Halushko</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://www.oleksandrhalushko.nl/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://www.oleksandrhalushko.nl/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

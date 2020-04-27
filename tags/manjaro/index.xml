@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>manjaro on Stumbling in Codes</title>
+    <link>https://www.oleksandrhalushko.nl/tags/manjaro/</link>
+    <description>Recent content in manjaro on Stumbling in Codes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 27 Apr 2020 12:23:40 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.oleksandrhalushko.nl/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Manjaro; Clevo Laptop; No Sound</title>
+      <link>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems/</link>
+      <pubDate>Mon, 27 Apr 2020 12:23:40 +0200</pubDate>
+      
+      <guid>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems/</guid>
+      <description>Symptoms No sound in Linux. Reporting of pavucontrol shows that sound is being emitted to the device but nothing happens.
+Messages in dmesg [ 37.482138] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 [ 37.482235] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 Configuration Laptop Clevo with P95_96_97Ex,Rx. Dual-boot Manjaro 20 with Windows 10.
+uname -v -r -o 5.7.0-1-MANJARO #1 SMP PREEMPT Tue Apr 21 20:48:43 UTC 2020 GNU/Linux 5.7.0-1-MANJARO</description>
+    </item>
+    
+  </channel>
+</rss>
