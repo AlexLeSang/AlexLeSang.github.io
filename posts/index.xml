@@ -1,24 +1,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on Stumbling in Codes</title>
-		<link>https://www.oleksandrhalushko.nl/posts/</link>
-		<description>Recent content in Posts on Stumbling in Codes</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
-		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 17 Aug 2020 08:45:43 +0200</lastBuildDate>
-		<atom:link href="https://www.oleksandrhalushko.nl/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>Manjaro 20.1 Clevo Sound Problems Linux 5.8.0-2-MANJARO</title>
-			<link>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems-linux58/</link>
-			<pubDate>Mon, 17 Aug 2020 08:45:43 +0200</pubDate>
-			
-			<guid>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems-linux58/</guid>
-			<description>Symptoms No sound in Manjaro. Sounds works fine in Windows 10. The symptoms appeared after update from Linux 5.7 to 5.8.0-2.
+    <channel>
+        <title>Posts on Stumbling in Codes</title>
+        <link>https://www.oleksandrhalushko.nl/posts/</link>
+        <description>Recent content in Posts on Stumbling in Codes</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Mon, 17 Aug 2020 08:45:43 +0200</lastBuildDate>
+        <atom:link href="https://www.oleksandrhalushko.nl/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Manjaro 20.1 Clevo Sound Problems Linux 5.8.0-2-MANJARO</title>
+            <link>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems-linux58/</link>
+            <pubDate>Mon, 17 Aug 2020 08:45:43 +0200</pubDate>
+            
+            <guid>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems-linux58/</guid>
+            <description>Symptoms No sound in Manjaro. Sounds works fine in Windows 10. The symptoms appeared after update from Linux 5.7 to 5.8.0-2.
 Configuration Laptop Clevo with P95_96_97Ex,Rx. Dual-boot Manjaro 20.1 with Windows 10.
 uname -v -r -o 5.8.0-2-MANJARO #1 SMP PREEMPT Sat Aug 8 17:55:27 UTC 2020 GNU/Linux lsb_release -a LSB Version:	n/a Distributor ID:	ManjaroLinux Description:	Manjaro Linux Release:	20.1 Codename:	Mikah lspci -kk 00:1f.3 Audio device: Intel Corporation Cannon Lake PCH cAVS (rev 10) Subsystem: CLEVO/KAPOK Computer Device 97e1 Kernel driver in use: snd_hda_intel Kernel modules: snd_hda_intel, snd_soc_skl, snd_sof_pci lsmod | grep snd_hda snd_hda_codec_realtek 135168 1 snd_hda_codec_generic 98304 1 snd_hda_codec_realtek ledtrig_audio 16384 3 snd_hda_codec_generic,snd_hda_codec_realtek,snd_sof snd_hda_ext_core 36864 4 snd_sof_intel_hda_common,snd_soc_hdac_hda,snd_soc_skl,snd_sof_intel_hda snd_hda_intel 57344 6 snd_intel_dspcfg 24576 4 snd_hda_intel,snd_sof_pci,snd_sof_intel_hda_common,snd_soc_skl snd_hda_codec 167936 4 snd_hda_codec_generic,snd_hda_intel,snd_hda_codec_realtek,snd_soc_hdac_hda snd_hda_core 106496 9 snd_hda_codec_generic,snd_hda_intel,snd_hda_ext_core,snd_hda_codec,snd_hda_codec_realtek,snd_sof_intel_hda_common,snd_soc_hdac_hda,snd_soc_skl,snd_sof_intel_hda snd_hwdep 16384 1 snd_hda_codec snd_pcm 147456 10 snd_hda_intel,snd_hda_codec,snd_sof,snd_sof_intel_hda_common,snd_compress,snd_soc_core,snd_soc_skl,snd_hda_core,snd_pcm_dmaengine snd 114688 24 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_compress,snd_soc_core,snd_pcm Solution Put the following configuration in /etc/modprobe.</description>
-			<content type="html"><![CDATA[<h2 id="symptoms">Symptoms</h2>
+            <content type="html"><![CDATA[<h2 id="symptoms">Symptoms</h2>
 <p>No sound in Manjaro. Sounds works fine in Windows 10. The symptoms appeared after update from Linux <code>5.7</code> to <code>5.8.0-2</code>.</p>
 <h2 id="configuration">Configuration</h2>
 <h3 id="laptop">Laptop</h3>
@@ -54,18 +54,18 @@ snd                   114688  24 snd_hda_codec_generic,snd_seq,snd_seq_device,sn
 </code></pre><p>Select <code>Analog Stereo Duplex</code> device.</p>
 <p><img src="/posts/images/sound_device.png" alt="Sound Device"></p>
 ]]></content>
-		</item>
-		
-		<item>
-			<title>Manjaro; Clevo Laptop; No Sound</title>
-			<link>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems/</link>
-			<pubDate>Mon, 27 Apr 2020 12:23:40 +0200</pubDate>
-			
-			<guid>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems/</guid>
-			<description>Symptoms No sound in Linux. Reporting of pavucontrol shows that sound is being emitted to the device but nothing happens.
+        </item>
+        
+        <item>
+            <title>Manjaro; Clevo Laptop; No Sound</title>
+            <link>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems/</link>
+            <pubDate>Mon, 27 Apr 2020 12:23:40 +0200</pubDate>
+            
+            <guid>https://www.oleksandrhalushko.nl/posts/manjaro-clevo-sound-problems/</guid>
+            <description>Symptoms No sound in Linux. Reporting of pavucontrol shows that sound is being emitted to the device but nothing happens.
 Messages in dmesg [ 37.482138] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 [ 37.482235] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5 Configuration Laptop Clevo with P95_96_97Ex,Rx. Dual-boot Manjaro 20 with Windows 10.
 uname -v -r -o 5.7.0-1-MANJARO #1 SMP PREEMPT Tue Apr 21 20:48:43 UTC 2020 GNU/Linux 5.7.0-1-MANJARO</description>
-			<content type="html"><![CDATA[<h2 id="symptoms">Symptoms</h2>
+            <content type="html"><![CDATA[<h2 id="symptoms">Symptoms</h2>
 <p>No sound in Linux. Reporting of <code>pavucontrol</code> shows that sound is being emitted to the device but nothing happens.</p>
 <h3 id="messages-in-dmesg">Messages in <code>dmesg</code></h3>
 <pre><code>[   37.482138] snd_hda_codec_realtek hdaudioC0D0: Unable to sync register 0x1f0e00. -5
@@ -132,20 +132,20 @@ Apr 27 12:01:16 oleksandr-manjaro kernel: input: HDA Intel PCH Headphone as /dev
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=216104">[SOLVED] Audio stopped working in linux 4.7</a></li>
 </ul>
 ]]></content>
-		</item>
-		
-		<item>
-			<title>Exercism: C&#43;&#43; mentor</title>
-			<link>https://www.oleksandrhalushko.nl/posts/exercism-cpp-mentor/</link>
-			<pubDate>Tue, 25 Feb 2020 23:24:33 +0100</pubDate>
-			
-			<guid>https://www.oleksandrhalushko.nl/posts/exercism-cpp-mentor/</guid>
-			<description>You do not truly understand a topic unless you can explain it to somebody else.
+        </item>
+        
+        <item>
+            <title>Exercism: C&#43;&#43; mentor</title>
+            <link>https://www.oleksandrhalushko.nl/posts/exercism-cpp-mentor/</link>
+            <pubDate>Tue, 25 Feb 2020 23:24:33 +0100</pubDate>
+            
+            <guid>https://www.oleksandrhalushko.nl/posts/exercism-cpp-mentor/</guid>
+            <description>You do not truly understand a topic unless you can explain it to somebody else.
 What is Exercism Exercism is a platform where people can learn programming languages.
 What is it for: learning programming languages quick, easy, hands-on and right.
 How does it work:
  you have instruction how to set up the environment you have simple exercise you have unit tests you run a unit test: it fails you google some basics: make the test pass repeat previous two steps until all provided unit tests pass  Then is the fun part: you push it to the platform (submit) and a living person with relevant experience, called mentor looks at what you have done and gives you feedback!</description>
-			<content type="html"><![CDATA[<p><em>You do not truly understand a topic unless you can explain it to somebody else.</em></p>
+            <content type="html"><![CDATA[<p><em>You do not truly understand a topic unless you can explain it to somebody else.</em></p>
 <h3 id="what-is-exercism">What is Exercism</h3>
 <p><a href="https://exercism.io/">Exercism</a> is a platform where people can learn programming languages.</p>
 <p>What is it for: learning programming languages <strong>quick</strong>, <strong>easy</strong>, <strong>hands-on</strong> and <strong>right</strong>.</p>
@@ -194,7 +194,7 @@ Being aware of professional biases while giving feedback is extremely important 
 <li><a href="https://docs.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp?view=vs-2019">Welcome back to C++ - Modern C++</a></li>
 </ul>
 ]]></content>
-		</item>
-		
-	</channel>
+        </item>
+        
+    </channel>
 </rss>
